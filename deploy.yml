@@ -28,10 +28,10 @@ Parameters:
     Default: "{}"
   RepoUrl:
     Type: String
-    Default: "https://github.com/aws-samples/bedrock-chat.git"
+    Default: "https://github.com/jchanDev/bedrock-chat.git"
   Version:
     Type: String
-    Default: "v3"
+    Default: "main"
 
 Resources:
   ProjectRole:
@@ -171,7 +171,7 @@ Resources:
                   "cat cdk.json",
                   "npm ci",
                   "npx cdk bootstrap",
-                  "npx cdk deploy --require-approval never --all"
+                  "npx cdk deploy --require-approval never"
                 ]
               }
             }
