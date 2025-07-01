@@ -31,7 +31,7 @@ Parameters:
     Default: "https://github.com/jchanDev/bedrock-chat.git"
   Version:
     Type: String
-    Default: "main"
+    Default: "v3"
 
 Resources:
   ProjectRole:
