@@ -36,7 +36,7 @@ def handler(event: dict, context: LambdaContext) -> dict:
 
 def add_user_to_groups(user_pool_id: str, username: str, groups: list[str]):
     for group in groups:
-        logger.info(f"Adding user '{username}' to group '{group}'")
+        logger.info(f"Adding user '{username}' to group '{group}' I changed the line of code")
         cognito.admin_add_user_to_group(
             UserPoolId=user_pool_id,
             Username=username,
